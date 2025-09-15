@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class CineDev {
+public class CineDev { 
     static char [][] salaDeCinema = new char [10][20];
     
     public static void main(String args[]) {
@@ -8,5 +8,14 @@ public class CineDev {
         inicializarSala();
 
         int opcao;
+        
+        do {
+            exibirMenu();
+            opcao = scanner.nextInt();
+            
+            switch (opcao) {
+                case 1:
+                    exibirMapa();
+                    break;
     }
 }
