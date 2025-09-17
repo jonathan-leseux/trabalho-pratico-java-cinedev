@@ -27,7 +27,9 @@ public class CineDev {
                     exibirRelatorio();
                     break;
                 case 5:
-                    System.out.println("Encerrando o sistema. Até logo");
-                    break;    
+                    System.out.println("Encerrando o sistema. Até logo!");
+                    break;
+                default:
+                    System.out.println("Opção inválida! Tente novamente.");
     }
 }
