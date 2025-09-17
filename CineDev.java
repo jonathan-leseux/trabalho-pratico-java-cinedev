@@ -51,5 +51,7 @@ public class CineDev {
     System.out.println("1. Exibir Mapa de Assentos");
     System.out.println("2. Comprar Ingresso");
     System.out.println("3. Cancelar Compra de Ingresso");
-    System.out.println("4.")
+    System.out.println("4. Exibir Relatorio de Ocupação");
+    System.out.println("5. Sair");
+    System.out.println("Escolha uma opção: ");
 }
