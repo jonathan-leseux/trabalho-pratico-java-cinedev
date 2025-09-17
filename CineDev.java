@@ -55,4 +55,7 @@ public class CineDev {
         System.out.println("5. Sair");
         System.out.println("Escolha uma opção: ");
 }
-    
+    public static void exibirMapa(){
+        System.out.println("\n Assentos: ");
+
+}
