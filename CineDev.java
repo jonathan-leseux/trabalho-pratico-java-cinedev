@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class CineDev { 
-    //matriz que representa a sala de cinema 
+    // matriz que representa a sala de cinema 
     static char [][] salaDeCinema = new char [10][20];
 
     public static void main(String args[]) {
@@ -57,5 +57,9 @@ public class CineDev {
 }
     public static void exibirMapa(){
         System.out.println("\n Assentos: ");
+        System.out.println("  ");
+        for (int j = 0; j < 20; j++){
+            System.out.printf("%2d ", j + 1);
+}
 
 }
