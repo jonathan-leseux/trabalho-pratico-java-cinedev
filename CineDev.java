@@ -31,5 +31,14 @@ public class CineDev {
                     break;
                 default:
                     System.out.println("Opção inválida! Tente novamente.");
+            }
+        } while (opcao !=5)
     }
 }
+
+    public static void inicializarSala() {
+    for (int i = 0; i < salaDeCinema.length; j++){
+        salaDeCinema[i][j] = 'L'
+}
+}
+
