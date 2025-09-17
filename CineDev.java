@@ -37,8 +37,10 @@ public class CineDev {
 }
 
     public static void inicializarSala() {
-    for (int i = 0; i < salaDeCinema.length; j++){
+        for (int i = 0; i < salaDeCinema.length; i++){
+            for (int j = 0; j < salaDeCinema.length; j++){
         salaDeCinema[i][j] = 'L'
-}
+        }
+    }
 }
 
