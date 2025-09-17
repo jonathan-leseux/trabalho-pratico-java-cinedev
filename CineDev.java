@@ -17,5 +17,17 @@ public class CineDev {
                 case 1:
                     exibirMapa();
                     break;
+                case 2:
+                    comprarIngresso();
+                    break;
+                case 3:
+                    cancelarIngresso();
+                    break;
+                case 4:
+                    exibirRelatorio();
+                    break;
+                case 5:
+                    System.out.println("Encerrando o sistema. Até logo");
+                    break;    
     }
 }
