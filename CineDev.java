@@ -33,14 +33,14 @@ public class CineDev {
                 default:
                     System.out.println("Opção inválida! Tente novamente.");
             }
-        } while (opcao !=5)
+        } while (opcao !=5);
     }
 }
 // assentos livres 'L'
     public static void inicializarSala() {
         for (int i = 0; i < salaDeCinema.length; i++){
             for (int j = 0; j < salaDeCinema.length; j++){
-        salaDeCinema[i][j] = 'L'
+        salaDeCinema[i][j] = 'L';
         }
     }
 }
@@ -55,6 +55,8 @@ public class CineDev {
         System.out.println("5. Sair");
         System.out.println("Escolha uma opção: ");
     }
+
+// mapa da sala
     public static void exibirMapa(){
         System.out.println("\n Assentos: ");
         System.out.println("  ");
@@ -66,7 +68,12 @@ public class CineDev {
     for (int i = 0; i < salaDeCinema.length; i++){
         System.out.printf("Fileira %2d: ", i + 1);
         for (int j = 0; j < salaDeCinema.length; j++){
-            System.out.print("[" + salaDeCinema[i][j]+ "]")
+            System.out.print("[" + salaDeCinema[i][j]+ "]");
         }
+        System.out.println();
     }
+}
+// compra do ingresso
+    public static void comprarIngresso (Scanner scanner){
+    System.out
 }
