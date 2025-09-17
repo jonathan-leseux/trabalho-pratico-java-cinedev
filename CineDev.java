@@ -75,5 +75,12 @@ public class CineDev {
 }
 // compra do ingresso
     public static void comprarIngresso (Scanner scanner){
-    System.out
+    System.out.print("\nDigite o número da fileira (1 - 10): ");
+    int fileira = scanner.nextInt();
+    System.out.print("Digite o número do assento (1 - 20): ");
+    int assento = scanner.nextInt();
+
+    if (validarPosicao(fileira, assento)){
+        if ()
+}
 }
