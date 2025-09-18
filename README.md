@@ -11,7 +11,7 @@ Joaquin Martino da Luz
 Matricula: 420878
 
     Descrição
-O CineDev é um sistema simples em console que gerencia a cenda de ingressos e a ocupação de assentos em uma sala de cinema, essa sala tem 10 fileiras, 20 assentos por fileira.
+O CineDev é um sistema simples em console que gerencia a venda de ingressos e a ocupação de assentos em uma sala de cinema, essa sala tem 10 fileiras, 20 assentos por fileira.
 O sistema permite exibir o mapa de assentos, comprar ingresso, cancelar a compra do ingresso, exibir relatorio de ocupação, e sair do sistema.
 
     Funcionalidades
@@ -20,4 +20,5 @@ O sistema permite exibir o mapa de assentos, comprar ingresso, cancelar a compra
 *Mapa exibido de forma clara com numeração das fileiras e dos assentos.
 *Calculo automatico de ocupação da sala.
 
+    
     
