@@ -7,8 +7,8 @@ Matricula:467179
 Matheus Pedroso Ostauro Costa
 Matricula: 467747
 
-Joaquin
-Matricula:
+Joaquin Martino da Luz
+Matricula: 420878
 
     Descrição
 O CineDev é um sistema simples em console que gerencia a cenda de ingressos e a ocupação de assentos em uma sala de cinema, essa sala tem 10 fileiras, 20 assentos por fileira.
