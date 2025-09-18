@@ -4,9 +4,8 @@ public class CineDev {
     
     // matriz que representa a sala de cinema
     static char [][] salaDeCinema = new char [10][20];
-
+    static Scanner scanner = new Scanner(System.in);
     public static void main(String args[]) {
-        Scanner scanner = new Scanner(System.in);
         inicializarSala();
 
         int opcao;
