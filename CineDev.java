@@ -39,7 +39,7 @@ public class CineDev {
 // assentos livres 'L'
     public static void inicializarSala() {
         for (int i = 0; i < salaDeCinema.length; i++){
-            for (int j = 0; j < salaDeCinema.length; j++){
+            for (int j = 0; j < salaDeCinema[i].length; j++){
         salaDeCinema[i][j] = 'L';
         }
     }
@@ -58,20 +58,18 @@ public class CineDev {
 
 // mapa da sala
     public static void exibirMapa(){
-        System.out.println("\n Assentos: ");
-        System.out.println("  ");
-        for (int j = 0; j < 20; j++){
-            System.out.printf("%2d ", j + 1);
+        for (int j = 0; j < salaDeCinema[0].length; j++) {
+    System.out.printf("%2d ", j + 1);
+}
+System.out.println();
+
+for (int i = 0; i < salaDeCinema.length; i++) {
+    System.out.printf("Fileira %2d: ", i + 1);
+    for (int j = 0; j < salaDeCinema[i].length; j++) {
+        System.out.print("[" + salaDeCinema[i][j] + "]");
     }
     System.out.println();
-    
-    for (int i = 0; i < salaDeCinema.length; i++){
-        System.out.printf("Fileira %2d: ", i + 1);
-        for (int j = 0; j < salaDeCinema.length; j++){
-            System.out.print("[" + salaDeCinema[i][j]+ "]");
-        }
-        System.out.println();
-    }
+}
 }
 // compra do ingresso
     public static void comprarIngresso(){
@@ -92,6 +90,7 @@ public class CineDev {
         System.out.println("posicao invalida. tente novamente.");
     }
 }
+    //cancelamento do ingresso
     public static void cancelarIngresso(){
         System.out.println("\nDigite o numero da fileira (1-10):");
         int fileira = scanner.nextInt();
@@ -104,6 +103,7 @@ public class CineDev {
                     System.out.println("compra cancelada com sucesso");
             } else {
                 System.out.println("esse assento não foi comprado!");
+                }
             } else {
                     System.out.println("Posição inválida. Tente novamente.");
                     }
@@ -124,7 +124,8 @@ public class CineDev {
         }
         //valida a posição do assento
         public static boolean validarPosicao(int fileira, int assento){
-            return fileira >= 1&& fileira <= 10&& assento >= 1&& assento <=20;
+            return fileira >= 1 && fileira <= salaDeCinema.length &&
+       assento >= 1 && assento <= salaDeCinema[0].length;
+
     }
 }
-
