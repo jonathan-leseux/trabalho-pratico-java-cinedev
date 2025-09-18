@@ -93,21 +93,39 @@ public class CineDev {
         System.out.println("posicao invalida. tente novamente.");
     }
 }
-    public static void cancelaringresso(Scanner scanner){
+    public static void cancelarIngresso(){
         System.out.println("\nDigite o numero da fileira (1-10):");
         int fileira = scanner.nextInt();
          System.out.println("\nDigite o numero da assento (1-20):");
         int assento = scanner.nextInt();
         
         if (validarPosicao(fileira, assento)){
-            if (salaDeCinema[fileira-1][assento-1]=='O'){
+            if (salaDeCinema[fileira-1][assento-1]=='X'){
                 if (salaDeCinema[fileira-1][assento-1]=='L')
                     System.out.println("compra cancelada com sucesso");
             } else {
                 System.out.println("esse assento não foi comprado!");
-                
-            }
+            } else {
+                    System.out.println("Posição inválida. Tente novamente.");
+                    }
         }
+        //quantos assentos estão ocupados (relatorio)
+        public static void exibirRelatorio() {
+            int ocupados = 0;
+            for (int i = 0; i <salaDeCinema.length; i++){
+                for (int j = 0; j <salaDeCinema[i].length; j++){
+                    if (salaDeCinema[i][j] == 'X'){
+                        ocupados++;
+                    }
+                }  
+            }
+            System.out.println("\nrelatório de ocupação");
+            System.out.println("Assentos Ocupados: "+ ocupados);
+            System.out.println("Assentos Livres: " + (salaDeCinema.length * salaDeCinema[0].length - ocupados));
+        }
+        //valida a posição do assento
+        public static boolean validarPosicao(int fileira, int assento){
+            return fileira >= 1&& fileira <= 10&& assento >= 1&& assento <=20;
     }
 }
 
