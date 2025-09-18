@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
 public class CineDev { 
-    // matriz que representa a sala de cinema 
+    
+    // matriz que representa a sala de cinema
     static char [][] salaDeCinema = new char [10][20];
 
     public static void main(String args[]) {
@@ -35,7 +36,7 @@ public class CineDev {
             }
         } while (opcao !=5);
     }
-}
+
 // assentos livres 'L'
     public static void inicializarSala() {
         for (int i = 0; i < salaDeCinema.length; i++){
@@ -74,13 +75,39 @@ public class CineDev {
     }
 }
 // compra do ingresso
-    public static void comprarIngresso (Scanner scanner){
+    public static void comprarIngresso(){
     System.out.print("\nDigite o número da fileira (1 - 10): ");
-    int fileira = scanner.nextInt();
+        int fileira = scanner.nextInt();
     System.out.print("Digite o número do assento (1 - 20): ");
-    int assento = scanner.nextInt();
+        int assento = scanner.nextInt();
 
     if (validarPosicao(fileira, assento)){
-        if ()
+        if (salaDeCinema[fileira - 1][assento - 1] == 'L'){
+            salaDeCinema[fileira - 1][assento - 1] = 'X';
+            
+            System.out.println("ingresso comprado com sucesso!");
+        }else{
+            System.out.println("este assento ja esta ocupado.");
+        }
+        }else{
+        System.out.println("posicao invalida. tente novamente.");
+    }
 }
+    public static void cancelaringresso(Scanner scanner){
+        System.out.println("\nDigite o numero da fileira (1-10):");
+        int fileira = scanner.nextInt();
+         System.out.println("\nDigite o numero da assento (1-20):");
+        int assento = scanner.nextInt();
+        
+        if (validarPosicao(fileira, assento)){
+            if (salaDeCinema[fileira-1][assento-1]=='O'){
+                if (salaDeCinema[fileira-1][assento-1]=='L')
+                    System.out.println("compra cancelada com sucesso");
+            } else {
+                System.out.println("esse assento não foi comprado!");
+                
+            }
+        }
+    }
 }
+
