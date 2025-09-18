@@ -118,10 +118,13 @@ for (int i = 0; i < salaDeCinema.length; i++) {
                     }
                 }  
             }
+            
             System.out.println("\nrelatório de ocupação");
             System.out.println("Assentos Ocupados: "+ ocupados);
             System.out.println("Assentos Livres: " + (salaDeCinema.length * salaDeCinema[0].length - ocupados));
-        }
+            System.out.println("Total de assentos: " + salaDeCinema.length * salaDeCinema[0].length);
+            System.out.println("Percentual de assentos ocupados: ");
+        }   
         //valida a posição do assento
         public static boolean validarPosicao(int fileira, int assento){
             return fileira >= 1 && fileira <= salaDeCinema.length &&
