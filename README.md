@@ -28,10 +28,15 @@ Como executar
 
 Salve o arquivo e execute ele no Prompt de Comando (CMD), utilize esses codigos dentro do CMD. (todos em letra minuscula)
 
+
 cd desktop (muda o diretorio pra a area de trabalho)
+
 cd Downloads (muda da area de trabalho pra pasta Downloads)
+
 javac CineDev.java (compilar o arquivo)
+
 java CineDev (executar o arquivo)
+
 
 Pronto, você já está iniciando o arquivo pelo CMD.
     
